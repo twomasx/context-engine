@@ -1,0 +1,18 @@
+{
+  "name": "context-system",
+  "version": "1.0.0",
+  "description": "A context system for a suite of AI integrated applications.",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "twomasx",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.2",
+    "morgan": "^1.10.0"
+  }
+}
