@@ -15,7 +15,7 @@ const UserController = {
     login: async (req, res) => {
         try {
             const { email, password } = req.body;
-            const user = await User.findOne({ email });
+            const user = await User.findOne({ email }).populate('contexts');
 
             if (!user) {
                 return res.status(404).json({ message: 'User not found' });
@@ -66,5 +66,5 @@ const UserController = {
         }
     },
 };
-    
+
 module.exports = UserController;
